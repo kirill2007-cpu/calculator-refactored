@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculator Refactored</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="calculator">
+        <div class="calculator__inner">
+          <div class="calculator__screen">
+            <input class="calculator__input" type="text" readonly>
+          </div>
+          <div class="calculator__keys">
+            <div class="calculator__keys-row">
+              <button class="calculator__key" onclick="clickOnKey('1')">1</button>
+              <button class="calculator__key" onclick="clickOnKey('2')">2</button>
+              <button class="calculator__key" onclick="clickOnKey('3')">3</button>
+              <button class="calculator__key" onclick="clickOnKey('+')">+</button>
+            </div>
+            <div class="calculator__keys-row">
+              <button class="calculator__key" onclick="clickOnKey('4')">4</button>
+              <button class="calculator__key" onclick="clickOnKey('5')">5</button>
+              <button class="calculator__key" onclick="clickOnKey('6')">6</button>
+              <button class="calculator__key" onclick="clickOnKey('-')">-</button>
+            </div>
+            <div class="calculator__keys-row">
+              <button class="calculator__key" onclick="clickOnKey('7')">7</button>
+              <button class="calculator__key" onclick="clickOnKey('8')">8</button>
+              <button class="calculator__key" onclick="clickOnKey('9')">9</button>
+              <button class="calculator__key" onclick="clickOnResultKey()">=</button>
+            </div>
+            <div class="calculator__keys-row">
+              <button class="calculator__key" onclick="clickOnKey('0')">0</button>
+              <button class="calculator__key" onclick="clickOnKey('.')">.</button>
+              <button class="calculator__key" onclick="clickOnKey('*')">*</button>
+              <button class="calculator__key reset" onclick="clickOnResetKey()">C</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+
+</html>
